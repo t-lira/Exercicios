@@ -25,3 +25,33 @@ int main() {
 
   return 0;
 }
+
+/*
+2. Fazer um programa para receber 3 valores inteiros do usuário e mostrar a sua média (que pode não ser inteira).
+*/
+
+#include <stdio.h>
+
+int main() {
+  int valor1, valor2, valor3;
+  float media;
+  int soma;
+
+  // Leitura dos valores
+  printf("Digite o primeiro valor: ");
+  scanf("%d", &valor1);
+
+  printf("Digite o segundo valor: ");
+  scanf("%d", &valor2);
+
+  printf("Digite o terceiro valor: ");
+  scanf("%d", &valor3);
+
+  // Cálculo da média e da soma
+  media = (float)(valor1 + valor2 + valor3) / 3;
+
+  // Exibição da média e da soma
+  printf("A média dos valores é: %.2f\n", media);
+
+  return 0;
+}
