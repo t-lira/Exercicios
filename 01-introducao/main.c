@@ -147,3 +147,29 @@ int main (void){
   getchar();
   return 0;
 }
+
+/*
+6) Escreva um algoritmo para ler as dimensões de um retângulo (base e altura), calcular e escrever a
+área do retângulo.
+*/
+
+#include <stdio.h>
+
+int main (void){
+
+  // Variável para armazenar o valor digitado
+  int retanguloBase, retanguloAltura, calculo;
+
+  // Solicita ao usuário que digite um valor
+  printf("digite a base do triangulo: ");
+  scanf("%d", &retanguloBase);
+  printf("digite a altura do triangulo: ");
+  scanf("%d", &retanguloAltura);
+
+  // Calcula a área do triangulo 
+  calculo = retanguloBase * retanguloAltura;
+  printf("A área do retangulo é: %d\n", calculo);
+
+  getchar();
+  return 0;
+}
