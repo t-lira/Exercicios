@@ -94,3 +94,32 @@ int main(void) {
 
     return 0;
 }
+
+/*
+4) Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso
+contrário escrever NÃO É MAIOR QUE 10!
+*/
+
+#include <stdio.h>
+
+int main (void){
+
+  // Variável para armazenar o valor digitado
+  int valor;
+
+  // Solicita ao usuário que digite um valor
+  printf("digite um valor: ");
+  scanf("%d", &valor);
+
+  // Verifica se o valor é maior que 10
+  if (valor > 10) {
+      printf("O valor digitado é maior que Dez, número digitado: %d\n", valor);
+  } else if (valor == 10) {
+      printf("O valor digitado é igual a Dez, número digitado: %d\n", valor);
+  } else {
+      printf("O valor digitado é menor que Dez, número digitado: %d\n", valor);
+  }
+    
+  getchar();
+  return 0;
+}
