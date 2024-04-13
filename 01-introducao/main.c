@@ -123,3 +123,27 @@ int main (void){
   getchar();
   return 0;
 }
+
+/*
+5) Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor.
+*/
+
+#include <stdio.h>
+
+int main (void){
+
+  // Variável para armazenar o valor digitado
+  int valor;
+
+  // Solicita ao usuário que digite um valor
+  printf("digite um valor: ");
+  scanf("%d", &valor);
+
+  // Calcula e exibe o antecessor do valor
+  if (valor -= 1) {
+      printf("Antecessor do número digitado é: %d\n", valor);
+  } 
+    
+  getchar();
+  return 0;
+}
